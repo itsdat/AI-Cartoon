@@ -2,3 +2,5 @@ data/settings.json
 .venv/
 venv/
 __pycache__/
+.venv/
+__pycache__/
