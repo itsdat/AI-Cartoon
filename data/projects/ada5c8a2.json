@@ -1,0 +1,1231 @@
+{
+ "id": "ada5c8a2",
+ "title": "Pin 1%",
+ "story": {
+  "title": "Pin 1%",
+  "logline": "Một người phụ nữ tỉnh dậy với 'pin' năng lượng đầy, nhưng từng thông báo, cuộc họp và tin tức trong ngày rút cạn cô, cho đến khi con số cuối cùng buộc cô phải chọn cách sạc lại chính mình.",
+  "scenes": [
+   {
+    "id": "s1",
+    "title": "100% và 0 người",
+    "background": "home_evening",
+    "bg_prompt": "Anime-style kitchen floor at dawn, soft morning light filtering through window, a charging phone with glowing '100%' on screen lying on the floor, a kettle nearby, slightly messy atmosphere, no people, detailed interior, warm tones.",
+    "camera": "static",
+    "cast": [
+     {
+      "name": "Nữ chính",
+      "slot": "center",
+      "facing": "front",
+      "start": "sit"
+     },
+     {
+      "name": "Nam chính",
+      "slot": "far_right",
+      "facing": "left",
+      "start": "offscreen_right"
+     }
+    ],
+    "beats": [
+     {
+      "speaker": "narrator",
+      "text": "6 giờ 10 sáng. Điện thoại báo pin đầy 100%.",
+      "emotions": {
+       "Nữ chính": "neutral"
+      },
+      "actions": [
+       {
+        "who": "Nữ chính",
+        "do": "sit",
+        "at": 0
+       }
+      ],
+      "pause_after": 0.8,
+      "cues": [
+       {
+        "at": 0.2,
+        "cam": "close"
+       }
+      ]
+     },
+     {
+      "speaker": "narrator",
+      "text": "Còn tôi ngồi bệt sàn bếp, tóc rối, ôm ấm nước nguội.",
+      "emotions": {
+       "Nữ chính": "sad"
+      },
+      "actions": [],
+      "pause_after": 0.5
+     },
+     {
+      "speaker": "narrator",
+      "text": "Quạt trần chạy vù vù, không ai nói gì.",
+      "emotions": {
+       "Nữ chính": "neutral"
+      },
+      "actions": [],
+      "pause_after": 0.3,
+      "cues": [
+       {
+        "at": 0,
+        "cam": "wide"
+       }
+      ]
+     },
+     {
+      "speaker": "Nữ chính",
+      "text": "Ừ, pin đầy. Người thì không.",
+      "emotions": {
+       "Nữ chính": "sad"
+      },
+      "actions": [
+       {
+        "who": "Nữ chính",
+        "do": "shrug",
+        "at": 0
+       }
+      ],
+      "pause_after": 0.6
+     },
+     {
+      "speaker": "narrator",
+      "text": "Thông báo đầu tiên hiện lên, tôi với tay tắt.",
+      "emotions": {
+       "Nữ chính": "neutral"
+      },
+      "actions": [],
+      "pause_after": 0.3,
+      "cues": [
+       {
+        "at": 0.3,
+        "cam": "close"
+       }
+      ]
+     },
+     {
+      "speaker": "narrator",
+      "text": "Rồi dòng tin dài như kéo treo bên vai áo.",
+      "emotions": {
+       "Nữ chính": "neutral"
+      },
+      "actions": [],
+      "pause_after": 0.3
+     },
+     {
+      "speaker": "narrator",
+      "text": "Điện thoại nằm xoay giữa sàn khi tôi thanh toán tiền điện.",
+      "emotions": {
+       "Nữ chính": "neutral"
+      },
+      "actions": [],
+      "pause_after": 0.4,
+      "cues": [
+       {
+        "at": 0,
+        "cam": "wide"
+       }
+      ]
+     },
+     {
+      "speaker": "narrator",
+      "text": "Xoay quần áo phơi. Một mình.",
+      "emotions": {
+       "Nữ chính": "sad"
+      },
+      "actions": [],
+      "pause_after": 0.5
+     }
+    ]
+   },
+   {
+    "id": "s2",
+    "title": "Biểu tượng phóng sại điều không thật",
+    "background": "home_evening",
+    "bg_prompt": "anime style, cozy small kitchen at dusk, warm dim amber light from a range hood, wooden counter, a pot of water on the stove, steam rising, a phone lying face-up on the counter with bright screen glow, scattered fruit peel, long shadows, muted warm color palette, no people",
+    "camera": "static",
+    "cast": [
+     {
+      "name": "Nữ chính",
+      "slot": "center",
+      "facing": "front",
+      "start": "stand"
+     }
+    ],
+    "beats": [
+     {
+      "speaker": "narrator",
+      "text": "Tôi chụp màn hình một đoạn chat đỏ rực như phóng sại mọi tế bào.",
+      "emotions": {
+       "Nữ chính": "surprised"
+      },
+      "actions": [
+       {
+        "who": "Nữ chính",
+        "do": "point",
+        "at": 0.3
+       }
+      ],
+      "pause_after": 0.4,
+      "cues": [
+       {
+        "at": 0.1,
+        "cam": "close",
+        "who": "Nữ chính"
+       }
+      ]
+     },
+     {
+      "speaker": "narrator",
+      "text": "Một em họ nhắn nợ ba trăm phút nghe máy; tin nhắn dài hơn cả thanh pin.",
+      "emotions": {
+       "Nữ chính": "sad"
+      },
+      "actions": [
+       {
+        "who": "Nữ chính",
+        "do": "shake_head",
+        "at": 0.5
+       }
+      ],
+      "pause_after": 0.5
+     },
+     {
+      "speaker": "narrator",
+      "text": "Tôi để máy xuống cạnh đôi giày đi hẹn — tổng chi phí một bộ phim chưa xem.",
+      "emotions": {
+       "Nữ chính": "neutral"
+      },
+      "actions": [
+       {
+        "who": "Nữ chính",
+        "do": "walk_to",
+        "to": "left",
+        "at": 0.3
+       }
+      ],
+      "pause_after": 0.3
+     },
+     {
+      "speaker": "narrator",
+      "text": "Bụng sôi trước khi tôi kịp bấm nút nhạc. Trên màn hình: 1%.",
+      "emotions": {
+       "Nữ chính": "scared"
+      },
+      "actions": [
+       {
+        "who": "Nữ chính",
+        "do": "hands_on_head",
+        "at": 0.6
+       }
+      ],
+      "pause_after": 0.9,
+      "cues": [
+       {
+        "at": 0.5,
+        "cam": "close",
+        "who": "Nữ chính"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "s3",
+    "title": "Cuộc họp nơi không sạc miễn phí",
+    "background": "office",
+    "bg_prompt": "anime style, sparse open-plan office at morning, long grey table, fluorescent lights, four laptop screens glowing, a whiteboard with deadlines, tired fluorescent tube flickering, muted cool tones, no people",
+    "camera": "static",
+    "cast": [
+     {
+      "name": "Nữ chính",
+      "slot": "center",
+      "facing": "front",
+      "start": "sit"
+     },
+     {
+      "name": "Nam chính",
+      "slot": "far_right",
+      "facing": "left",
+      "start": "stand"
+     }
+    ],
+    "beats": [
+     {
+      "speaker": "narrator",
+      "text": "Bốn chiếc mic sáng. Một giọng: 'Nữ chính, cập nhật thế nào?'",
+      "emotions": {
+       "Nữ chính": "neutral"
+      },
+      "actions": [
+       {
+        "who": "Nữ chính",
+        "do": "face",
+        "to": "front",
+        "at": 0.3
+       }
+      ],
+      "pause_after": 0.4,
+      "cues": [
+       {
+        "at": 0.1,
+        "cam": "wide",
+        "who": "Nữ chính"
+       }
+      ]
+     },
+     {
+      "speaker": "Nữ chính",
+      "text": "Dạ…",
+      "emotions": {
+       "Nữ chính": "scared"
+      },
+      "actions": [
+       {
+        "who": "Nữ chính",
+        "do": "nod",
+        "at": 0.2
+       }
+      ],
+      "pause_after": 0.8,
+      "cues": [
+       {
+        "at": 0.1,
+        "cam": "close",
+        "who": "Nữ chính"
+       }
+      ]
+     },
+     {
+      "speaker": "narrator",
+      "text": "Ngón tay tôi bấm nút Ủy trước khi kịp nghĩ.",
+      "emotions": {
+       "Nữ chính": "neutral"
+      },
+      "actions": [
+       {
+        "who": "Nữ chính",
+        "do": "point",
+        "at": 0.2
+       }
+      ],
+      "pause_after": 0.3,
+      "cues": [
+       {
+        "at": 0.3,
+        "cam": "close",
+        "who": "Nữ chính"
+       }
+      ]
+     },
+     {
+      "speaker": "narrator",
+      "text": "Mở máy: thư trên bảng gửi ngay báo cáo. File kết xuất 19%.",
+      "emotions": {
+       "Nữ chính": "scared"
+      },
+      "actions": [
+       {
+        "who": "Nữ chính",
+        "do": "hands_on_head",
+        "at": 0.3
+       }
+      ],
+      "pause_after": 0.6,
+      "cues": [
+       {
+        "at": 0.1,
+        "cam": "medium",
+        "who": "Nữ chính"
+       }
+      ]
+     },
+     {
+      "speaker": "narrator",
+      "text": "Người ngồi cạnh xoong nồi bỏ ra cửa, nụ cười méo.",
+      "emotions": {
+       "Nam chính": "sad"
+      },
+      "actions": [
+       {
+        "who": "Nam chính",
+        "do": "exit_right",
+        "at": 0.4
+       }
+      ],
+      "pause_after": 0.5,
+      "cues": [
+       {
+        "at": 0.2,
+        "who": "Nam chính"
+       }
+      ]
+     },
+     {
+      "speaker": "narrator",
+      "text": "Tôi móc cục pin dự phòng 10.000 mAh. Cắm vào — đèn đỏ đã cắt từ lâu.",
+      "emotions": {
+       "Nữ chính": "sad"
+      },
+      "actions": [
+       {
+        "who": "Nữ chính",
+        "do": "shrug",
+        "at": 0.5
+       }
+      ],
+      "pause_after": 0.9,
+      "cues": [
+       {
+        "at": 0.6,
+        "cam": "close",
+        "who": "Nữ chính"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "s4",
+    "title": "Sập tải từ con số",
+    "background": "street_day",
+    "bg_prompt": "Anime style, bus stop on a busy street in daylight, ailing bus number nine approaching, cracked pavement, an electric outlet on a wall with a phone charger dangling, a woman standing with a phone in hand, a man waiting nearby, urban Vietnamese setting, soft muted colors, emotional atmosphere",
+    "camera": "pan_right",
+    "cast": [
+     {
+      "name": "Nữ chính",
+      "slot": "center",
+      "facing": "front",
+      "start": "stand"
+     },
+     {
+      "name": "Nam chính",
+      "slot": "left",
+      "facing": "right",
+      "start": "stand"
+     }
+    ],
+    "beats": [
+     {
+      "speaker": "narrator",
+      "text": "Chuyến bus số chín nằm ngắc ngoải ở bến, đèn báo tin nhắn đỏ nhấp nháy trên tay tôi.",
+      "emotions": {
+       "Nữ chính": "neutral"
+      },
+      "actions": [
+       {
+        "who": "Nữ chính",
+        "do": "walk_to",
+        "to": "center",
+        "at": 0.2
+       }
+      ],
+      "pause_after": 0.3,
+      "cues": [
+       {
+        "at": 0.3,
+        "cam": "medium"
+       }
+      ]
+     },
+     {
+      "speaker": "Nữ chính",
+      "text": "Lên giường đi. Làm hôm đó? Đm mấy cái deadline.",
+      "emotions": {
+       "Nữ chính": "sad"
+      },
+      "actions": [
+       {
+        "who": "Nữ chính",
+        "do": "face",
+        "to": "front",
+        "at": 0.1
+       },
+       {
+        "who": "Nữ chính",
+        "do": "hands_on_head",
+        "at": 0.6
+       }
+      ],
+      "pause_after": 0.6,
+      "cues": [
+       {
+        "at": 0.5,
+        "cam": "close"
+       }
+      ]
+     },
+     {
+      "speaker": "narrator",
+      "text": "Một tin đỏ khác: hai dòng cô chắc khăn quàng anh em sức bắt của quán cháo.",
+      "emotions": {
+       "Nữ chính": "surprised"
+      },
+      "actions": [
+       {
+        "who": "Nữ chính",
+        "do": "shake_head",
+        "at": 0.2
+       }
+      ],
+      "pause_after": 0.3
+     },
+     {
+      "speaker": "Nam chính",
+      "text": "Đến chưa? K có report tto cho bố.",
+      "emotions": {
+       "Nam chính": "neutral"
+      },
+      "actions": [
+       {
+        "who": "Nam chính",
+        "do": "step_in",
+        "at": 0
+       }
+      ],
+      "pause_after": 0.4,
+      "cues": [
+       {
+        "at": 0.2,
+        "cam": "medium"
+       }
+      ]
+     },
+     {
+      "speaker": "narrator",
+      "text": "Tôi nhìn ổ điện bình: cắm sạc điện thoại, đèn đỏ báo pin 82%.",
+      "emotions": {
+       "Nữ chính": "sad"
+      },
+      "actions": [
+       {
+        "who": "Nữ chính",
+        "do": "point",
+        "at": 0.3
+       }
+      ],
+      "pause_after": 0.5,
+      "cues": [
+       {
+        "at": 0.1,
+        "cam": "close"
+       }
+      ]
+     },
+     {
+      "speaker": "narrator",
+      "text": "Nhưng sạc không vào. Sau mười chín phút, vẫn không có kết quả.",
+      "emotions": {
+       "Nữ chính": "angry"
+      },
+      "actions": [
+       {
+        "who": "Nữ chính",
+        "do": "shrug",
+        "at": 0.2
+       }
+      ],
+      "pause_after": 0.6,
+      "cues": [
+       {
+        "at": 0.4,
+        "cam": "medium"
+       }
+      ]
+     },
+     {
+      "speaker": "narrator",
+      "text": "Tôi ngồi xuống bậc thềm, bàn tay vẫn cầm điện thoại. Màn hình hiện 2%.",
+      "emotions": {
+       "Nữ chính": "sad"
+      },
+      "actions": [
+       {
+        "who": "Nữ chính",
+        "do": "sit",
+        "at": 0.1
+       },
+       {
+        "who": "Nữ chính",
+        "do": "face",
+        "to": "front",
+        "at": 0.7
+       }
+      ],
+      "pause_after": 0.8,
+      "cues": [
+       {
+        "at": 0.3,
+        "cam": "close"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "s5",
+    "title": "3% và tờ mì",
+    "background": "home_evening",
+    "bg_prompt": "anime style, small Vietnamese kitchen at dusk, warm dim ceiling bulb, messy counter with a kettle, scattered unopened bills, an instant noodle packet, rice cooker with condensation dripping, worn wooden floor, blue evening light through window, no people",
+    "camera": "static",
+    "cast": [
+     {
+      "name": "Nữ chính",
+      "slot": "center",
+      "facing": "front",
+      "start": "stand"
+     },
+     {
+      "name": "Nam chính",
+      "slot": "far_right",
+      "facing": "left",
+      "start": "offscreen_right"
+     }
+    ],
+    "beats": [
+     {
+      "speaker": "narrator",
+      "text": "Tôi vặn ấm sạc, cần cắt chập chờn, cổng tự khoá cứng ngắc.",
+      "emotions": {
+       "Nữ chính": "sad"
+      },
+      "actions": [
+       {
+        "who": "Nữ chính",
+        "do": "hands_on_head",
+        "at": 0.4
+       }
+      ],
+      "pause_after": 0.4,
+      "cues": [
+       {
+        "at": 0.1,
+        "cam": "close",
+        "who": "Nữ chính"
+       }
+      ]
+     },
+     {
+      "speaker": "narrator",
+      "text": "Ba mươi bốn tin nhắn. Chín trang báo cáo. Nồi cơm treo một giọt nước.",
+      "emotions": {
+       "Nữ chính": "sad"
+      },
+      "actions": [
+       {
+        "who": "Nữ chính",
+        "do": "shrug",
+        "at": 0.5
+       }
+      ],
+      "pause_after": 0.5
+     },
+     {
+      "speaker": "narrator",
+      "text": "Ba phần trăm. Tôi nhắn: 'tao qua liền bốn phút'.",
+      "emotions": {},
+      "actions": [],
+      "pause_after": 0.6,
+      "cues": [
+       {
+        "at": 0.2,
+        "cam": "close",
+        "who": "Nữ chính"
+       }
+      ]
+     },
+     {
+      "speaker": "Nữ chính",
+      "text": "Bốn phút.",
+      "emotions": {
+       "Nữ chính": "scared"
+      },
+      "actions": [
+       {
+        "who": "Nữ chính",
+        "do": "sit",
+        "at": 0.2
+       }
+      ],
+      "pause_after": 0.5
+     },
+     {
+      "speaker": "narrator",
+      "text": "Cửa mở. Anh xách bịch mì, không hỏi gì, bắc ghế cạnh bếp.",
+      "emotions": {},
+      "actions": [
+       {
+        "who": "Nam chính",
+        "do": "enter_right",
+        "at": 0.1
+       },
+       {
+        "who": "Nam chính",
+        "do": "walk_to",
+        "to": "right",
+        "at": 0.4
+       }
+      ],
+      "pause_after": 0.4,
+      "cues": [
+       {
+        "at": 0.3,
+        "cam": "wide",
+        "who": "Nam chính"
+       }
+      ]
+     },
+     {
+      "speaker": "Nam chính",
+      "text": "Ngồi đây. Tao nấu.",
+      "emotions": {
+       "Nữ chính": "surprised"
+      },
+      "actions": [
+       {
+        "who": "Nam chính",
+        "do": "point",
+        "at": 0.3
+       }
+      ],
+      "pause_after": 0.8
+     },
+     {
+      "speaker": "narrator",
+      "text": "Tôi đếm đúng bốn phút. Và lần đầu, tôi không trả lời tin nào.",
+      "emotions": {
+       "Nữ chính": "sad"
+      },
+      "actions": [
+       {
+        "who": "Nữ chính",
+        "do": "cover_face",
+        "at": 0.5
+       }
+      ],
+      "pause_after": 0.6,
+      "cues": [
+       {
+        "at": 0.1,
+        "cam": "close",
+        "who": "Nữ chính"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "s6",
+    "title": "Một người quen lạc mòn biết hơn",
+    "background": "home_evening",
+    "bg_prompt": "cozy Vietnamese kitchen at evening, warm yellow lamp light, rain droplets on window, a steaming bowl on the stove, cluttered counter with a dead power bank, anime style, soft shadows, empty no people",
+    "camera": "static",
+    "cast": [
+     {
+      "name": "Nữ chính",
+      "slot": "center",
+      "facing": "front",
+      "start": "sit"
+     },
+     {
+      "name": "Nam chính",
+      "slot": "right",
+      "facing": "left",
+      "start": "offscreen_right"
+     }
+    ],
+    "beats": [
+     {
+      "speaker": "narrator",
+      "text": "Bốn phút. Cửa mở đúng bốn phút. Anh bước vào, vai còn mùi mưa.",
+      "emotions": {
+       "Nữ chính": "surprised"
+      },
+      "actions": [
+       {
+        "who": "Nam chính",
+        "do": "enter_right",
+        "at": 0.1
+       }
+      ],
+      "pause_after": 0.6,
+      "cues": [
+       {
+        "at": 0.1,
+        "cam": "wide",
+        "who": "Nam chính"
+       }
+      ]
+     },
+     {
+      "speaker": "Nam chính",
+      "text": "Ngồi xuống ghế đi. Chân cậu run như cái máy giặt rồi kìa.",
+      "emotions": {
+       "Nam chính": "neutral",
+       "Nữ chính": "sad"
+      },
+      "actions": [
+       {
+        "who": "Nam chính",
+        "do": "point",
+        "at": 0.3
+       },
+       {
+        "who": "Nữ chính",
+        "do": "sit",
+        "at": 0.7
+       }
+      ],
+      "pause_after": 0.4,
+      "cues": [
+       {
+        "at": 0.3,
+        "cam": "two",
+        "who": "Nam chính"
+       }
+      ]
+     },
+     {
+      "speaker": "narrator",
+      "text": "Anh không hỏi gì. Chỉ đặt đôi đũa gỗ cạnh bát, rồi mở hộp xôi nóng còn bốc khói.",
+      "emotions": {
+       "Nam chính": "neutral"
+      },
+      "actions": [
+       {
+        "who": "Nam chính",
+        "do": "walk_to",
+        "to": "center",
+        "at": 0.2
+       },
+       {
+        "who": "Nữ chính",
+        "do": "cover_face",
+        "at": 0.6
+       }
+      ],
+      "pause_after": 0.7,
+      "cues": [
+       {
+        "at": 0.2,
+        "cam": "close",
+        "who": "Nam chính"
+       }
+      ]
+     },
+     {
+      "speaker": "Nữ chính",
+      "text": "Tôi... tưởng phải trả lời hết ba chục tin đó trước.",
+      "emotions": {
+       "Nữ chính": "sad"
+      },
+      "actions": [
+       {
+        "who": "Nữ chính",
+        "do": "shake_head",
+        "at": 0.4
+       }
+      ],
+      "pause_after": 0.8,
+      "cues": [
+       {
+        "at": 0.4,
+        "cam": "close",
+        "who": "Nữ chính"
+       }
+      ]
+     },
+     {
+      "speaker": "Nam chính",
+      "text": "Điện thoại chết thì kệ nó. Cơm nguội thì bỏ. Ăn đi.",
+      "emotions": {
+       "Nam chính": "neutral",
+       "Nữ chính": "sad"
+      },
+      "actions": [
+       {
+        "who": "Nam chính",
+        "do": "shrug",
+        "at": 0.2
+       }
+      ],
+      "pause_after": 0.6,
+      "cues": [
+       {
+        "at": 0.2,
+        "cam": "medium",
+        "who": "Nam chính"
+       }
+      ]
+     },
+     {
+      "speaker": "narrator",
+      "text": "Tôi ngồi xuống, bóc miếng xôi. Lần đầu, tai tôi không nghe tiếng quạt trần nữa — chỉ tiếng mưa nhỏ giọt trên mái tôn.",
+      "emotions": {
+       "Nữ chính": "sad"
+      },
+      "actions": [
+       {
+        "who": "Nữ chính",
+        "do": "bow",
+        "at": 0.3
+       }
+      ],
+      "pause_after": 1,
+      "cues": [
+       {
+        "at": 0.3,
+        "cam": "pull",
+        "who": "Nữ chính"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "s7",
+    "title": "Trả lại tuần sạc mừng",
+    "background": "plain_cream",
+    "bg_prompt": "minimalist anime kitchen at night, cream wall, half-finished bowl of noodles on wooden table, warm single lamp, wisp of steam, a spare battery pack and unplugged cable lying aside, rain-damp jacket on chair, soft shadows, quiet mood",
+    "camera": "static",
+    "cast": [
+     {
+      "name": "Nữ chính",
+      "slot": "center",
+      "facing": "front",
+      "start": "sit"
+     },
+     {
+      "name": "Nam chính",
+      "slot": "right",
+      "facing": "left",
+      "start": "stand"
+     }
+    ],
+    "beats": [
+     {
+      "speaker": "narrator",
+      "text": "Anh gỡ cục sạc dự phòng khỏi tay tôi, đặt xuống xa tầm với.",
+      "emotions": {
+       "Nam chính": "neutral"
+      },
+      "actions": [
+       {
+        "who": "Nam chính",
+        "do": "walk_to",
+        "to": "center",
+        "at": 0.2
+       }
+      ],
+      "pause_after": 0.8,
+      "cues": [
+       {
+        "at": 0.1,
+        "cam": "close",
+        "who": "Nam chính"
+       }
+      ]
+     },
+     {
+      "speaker": "Nam chính",
+      "text": "Điện thoại chết thì kệ nó.",
+      "emotions": {
+       "Nam chính": "neutral"
+      },
+      "actions": [
+       {
+        "who": "Nam chính",
+        "do": "shrug",
+        "at": 0.3
+       }
+      ],
+      "pause_after": 0.3
+     },
+     {
+      "speaker": "Nữ chính",
+      "text": "Nhỡ có người cần gấp...",
+      "emotions": {
+       "Nữ chính": "sad"
+      },
+      "actions": [
+       {
+        "who": "Nữ chính",
+        "do": "point",
+        "at": 0.3
+       }
+      ],
+      "pause_after": 0.3,
+      "cues": [
+       {
+        "at": 0.2,
+        "cam": "close",
+        "who": "Nữ chính"
+       }
+      ]
+     },
+     {
+      "speaker": "Nam chính",
+      "text": "Cần thì họ gọi lại. Còn mày thì cần ăn.",
+      "emotions": {
+       "Nam chính": "neutral"
+      },
+      "actions": [],
+      "pause_after": 0.6
+     },
+     {
+      "speaker": "narrator",
+      "text": "Tôi phì cười, lần đầu trong ngày. Một tiếng thở ra dài.",
+      "emotions": {
+       "Nữ chính": "happy"
+      },
+      "actions": [
+       {
+        "who": "Nữ chính",
+        "do": "sit",
+        "at": 0.1
+       }
+      ],
+      "pause_after": 0.5,
+      "cues": [
+       {
+        "at": 0.4,
+        "cam": "close",
+        "who": "Nữ chính"
+       }
+      ]
+     },
+     {
+      "speaker": "Nam chính",
+      "text": "Bát đũa để đó. Mai rửa.",
+      "emotions": {
+       "Nam chính": "neutral"
+      },
+      "actions": [
+       {
+        "who": "Nam chính",
+        "do": "nod",
+        "at": 0.3
+       }
+      ],
+      "pause_after": 0.9
+     }
+    ]
+   },
+   {
+    "id": "s8",
+    "title": "Không sạc điện thoại nữa",
+    "background": "home_evening",
+    "bg_prompt": "cozy Vietnamese kitchen at late evening, warm dim lamp, rain drops on tin roof, bamboo shelf with a phone charger lying unused, a plate of orange peels folded like flower petals, faint blue night through window, steam from a bowl, anime style, no people",
+    "camera": "push_in",
+    "cast": [
+     {
+      "name": "Nữ chính",
+      "slot": "center",
+      "facing": "front",
+      "start": "sit"
+     },
+     {
+      "name": "Nam chính",
+      "slot": "right",
+      "facing": "left",
+      "start": "stand"
+     }
+    ],
+    "beats": [
+     {
+      "speaker": "narrator",
+      "text": "Anh xỏ áo, mùi mưa còn trên vai. Cửa khép. Tôi ngồi lại một mình.",
+      "emotions": {
+       "Nam chính": "neutral",
+       "Nữ chính": "neutral"
+      },
+      "actions": [
+       {
+        "who": "Nam chính",
+        "do": "exit_right",
+        "at": 0.5
+       }
+      ],
+      "pause_after": 0.8,
+      "cues": [
+       {
+        "at": 0,
+        "cam": "wide",
+        "who": "Nam chính"
+       }
+      ]
+     },
+     {
+      "speaker": "narrator",
+      "text": "Trên kệ bếp, cục sạc vẫn cắm vào điện thoại. Tôi không với tay nữa.",
+      "emotions": {
+       "Nữ chính": "neutral"
+      },
+      "actions": [
+       {
+        "who": "Nữ chính",
+        "do": "face",
+        "to": "left",
+        "at": 0.3
+       }
+      ],
+      "pause_after": 0.6,
+      "cues": [
+       {
+        "at": 0.2,
+        "cam": "close",
+        "who": "Nữ chính"
+       }
+      ]
+     },
+     {
+      "speaker": "narrator",
+      "text": "Tôi bóc quả quýt, chậm. Vỏ xòe ra hình cánh hoa, tôi để nguyên.",
+      "emotions": {
+       "Nữ chính": "happy"
+      },
+      "actions": [
+       {
+        "who": "Nữ chính",
+        "do": "nod",
+        "at": 0.4
+       }
+      ],
+      "pause_after": 0.7,
+      "cues": [
+       {
+        "at": 0,
+        "cam": "close",
+        "who": "Nữ chính"
+       }
+      ]
+     },
+     {
+      "speaker": "narrator",
+      "text": "Từng múi chua mặn. Tôi nhai kỹ, lần đầu không nghe tiếng quạt trần.",
+      "emotions": {
+       "Nữ chính": "happy"
+      },
+      "actions": [],
+      "pause_after": 0.5
+     },
+     {
+      "speaker": "narrator",
+      "text": "Đứng dậy, tôi rửa bát. Nước chảy, tay tôi ấm dần.",
+      "emotions": {
+       "Nữ chính": "neutral"
+      },
+      "actions": [
+       {
+        "who": "Nữ chính",
+        "do": "stand",
+        "at": 0.1
+       }
+      ],
+      "pause_after": 0.4,
+      "cues": [
+       {
+        "at": 0,
+        "cam": "wide",
+        "who": "Nữ chính"
+       }
+      ]
+     },
+     {
+      "speaker": "narrator",
+      "text": "Tôi mở danh sách nhạc cũ, bấm bài dở dang hôm nào.",
+      "emotions": {
+       "Nữ chính": "happy"
+      },
+      "actions": [],
+      "pause_after": 0.5,
+      "cues": [
+       {
+        "at": 0,
+        "cam": "medium",
+        "who": "Nữ chính"
+       }
+      ]
+     },
+     {
+      "speaker": "narrator",
+      "text": "Điện thoại nằm xa trên kệ, màn hình tối. Cục pin ấy, kệ nó.",
+      "emotions": {
+       "Nữ chính": "neutral"
+      },
+      "actions": [
+       {
+        "who": "Nữ chính",
+        "do": "walk_to",
+        "to": "right",
+        "at": 0.3
+       }
+      ],
+      "pause_after": 0.9,
+      "cues": [
+       {
+        "at": 0.4,
+        "cam": "wide",
+        "who": "Nữ chính"
+       }
+      ]
+     },
+     {
+      "speaker": "narrator",
+      "text": "Máy hết pin. Người sạc đầy. Tôi ngồi xuống cạnh cửa sổ, nghe mưa.",
+      "emotions": {
+       "Nữ chính": "happy"
+      },
+      "actions": [
+       {
+        "who": "Nữ chính",
+        "do": "sit",
+        "at": 0.5
+       }
+      ],
+      "pause_after": 1,
+      "cues": [
+       {
+        "at": 0.6,
+        "cam": "push",
+        "who": "Nữ chính"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "style": "drama",
+  "mood": "sad",
+  "outline": {
+   "hook": "5 giây đầu: bàn tay cắm sạc điện thoại báo 'pin đã đầy 100%', ngay cạnh là cơ thể cô ngồi bệt ở sàn bếp, tóc rối, một tay ôm ấm nước nguội — trong khi đồng hồ mới 6:10 sáng.",
+   "central_question": "Vì sao ta bắt đầu ngày với pin đầy mà cạn kiệt trước khi trời tối?",
+   "twist": "Cô không hết pin trong ngày — cô hết pin cho chính mình từ năm này qua năm khác bằng quy tắc 'còn tỉnh là còn trả lời'; cú aha không phải là sạc điện thoại mà là một người bạn đổi câu từ 'mày ổn không?' thành 'mày đã ăn gì chưa?' rồi kê ghế bắc bếp nấu mì cho cô ngồi ăn.",
+   "ending_image": "Đêm muộn: cục sạc cắm vào điện thoại đang nằm xa trên kệ bếp, còn cô ngồi ở cạnh cửa sổ, tay tự bóc quả quýt — một vỏ quýt xòe ra hình cánh hoa — rồi xuống rửa bát, mở nhạc mục 'chưa nghe xong'. Máy hết pin, người sạc đầy.",
+   "characters": [
+    {
+     "name": "Nữ chính",
+     "role": "nhân vật trải nghiệm — người kể chuyện; mở lòng khi 'pin cô' cạn dần qua các hoạt động đời thường",
+     "want": "cầu mong hết ngày còn đủ sức nấu cho mình một bữa tối tử tế",
+     "flaw": "tin rằng 'trả lời ngay' là trách nhiệm, và xấu hổ khi nói 'kệ đi, để mai tính'."
+    },
+    {
+     "name": "Nam chính",
+     "role": "bạn đối với nhân vật chính; đến muộn, ngồi cùng, không khuyên gì",
+     "want": "biến sự chú ý quan tâm thành một việc làm cụ thể — một đôi đũa, một quả quýt đã bóc",
+     "flaw": "thường im lặng đúng lúc cô cần tiếng nói, chỉ nói được bằng đồ ăn"
+    }
+   ]
+  },
+  "words": 625,
+  "lint": []
+ },
+ "audio": {},
+ "orient": "v",
+ "subOn": true,
+ "titleText": "",
+ "updated": 1795593700,
+ "style": "drama",
+ "look": "cozy",
+ "sfx": "calm",
+ "music": "sad",
+ "subStyle": "bold"
+}

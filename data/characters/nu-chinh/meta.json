@@ -1,0 +1,12 @@
+{
+ "name": "Nữ chính",
+ "gender": "female",
+ "age_group": "adult",
+ "height": 1.0,
+ "note": "",
+ "voice": "",
+ "style": {
+  "mouth_dy": 0.26,
+  "mouth_w": 0.15
+ }
+}

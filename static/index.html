@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stickman Studio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand"><span class="dot"></span>Stickman Studio</div>
+  <nav id="tabs">
+    <button data-tab="story" class="on">1 · Truyện</button>
+    <button data-tab="chars">2 · Nhân vật</button>
+    <button data-tab="bgs">3 · Phông nền</button>
+    <button data-tab="export">4 · Xem &amp; Xuất</button>
+    <button data-tab="settings">Cài đặt</button>
+  </nav>
+  <div class="proj">
+    <select id="projSel"></select>
+    <button id="projNew" class="ghost">Mới</button>
+    <button id="projSave" class="primary">Lưu</button>
+  </div>
+</header>
+
+<main>
+  <!-- ============ TRUYỆN ============ -->
+  <section id="tab-story" class="tab on">
+    <div class="cols">
+      <aside class="panel narrow">
+        <h2>Tạo cốt truyện bằng AI</h2>
+        <label>Ý tưởng / chủ đề <textarea id="idea" rows="4" placeholder="VD: một cậu bé bán vé số gặp lại người thầy cũ, nhưng ông không nhận ra cậu…  (để trống: AI tự nghĩ)"></textarea></label>
+        <label>Thể loại / giọng điệu
+          <select id="genre">
+            <option>cảm động, bất ngờ</option><option>bi kịch gia đình, day dứt</option><option>hài đen, châm biếm nhẹ</option>
+            <option>kinh dị tâm lý nhẹ</option><option>trinh thám, bí ẩn</option><option>tình cảm tuổi học trò</option>
+            <option>tâm lý xã hội, thực tế</option><option>kỳ ảo, ẩn dụ</option>
+          </select></label>
+        <label>Phong cách dựng <select id="style"></select></label>
+        <div class="row2">
+          <label>Độ dài (phút) <input id="minutes" type="number" min="1" max="15" step="0.5" value="5"></label>
+          <label>Ngôi kể <select id="pov"><option value="first">Ngôi 1 (tôi)</option><option value="third">Ngôi 3</option></select></label>
+        </div>
+        <label>Nhân vật tham gia <div id="castPick" class="chips"></div></label>
+        <label>Nhà cung cấp AI <select id="provider"><option value="demo">Demo (không cần API)</option><option value="gemini">Gemini</option><option value="deepseek">DeepSeek</option></select></label>
+        <button id="genBtn" class="primary big">Tạo cốt truyện</button>
+        <div id="genProg" class="prog hidden"><div class="bar"><i></i></div><span></span></div>
+        <p class="hint">Truyện dài được viết 2 bước: dàn ý (hook, bước ngoặt, kết) rồi từng cảnh. Mỗi cảnh chỉ dùng hành động mà engine thật sự làm được.</p>
+      </aside>
+      <div class="panel grow">
+        <div class="head"><h2>Kịch bản</h2><span id="storyMeta" class="muted"></span></div>
+        <input id="title" class="titleinp" placeholder="Tên truyện">
+        <div id="outline" class="outline hidden"></div>
+        <div id="lint" class="outline hidden"></div>
+        <div id="scenes"></div>
+        <div class="row"><button id="addScene" class="ghost">+ Thêm cảnh</button></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ NHÂN VẬT ============ -->
+  <section id="tab-chars" class="tab">
+    <div class="cols">
+      <aside class="panel narrow">
+        <h2>Thêm nhân vật</h2>
+        <p class="hint">Tải lên ảnh sheet nhân vật (4 góc nhìn toàn thân + các đầu biểu cảm). Tool tự tách đầu, thân, vai, hông và dựng tay chân.</p>
+        <label>Tên <input id="cName" placeholder="VD: Nam chính"></label>
+        <div class="row2">
+          <label>Giới tính <select id="cGender"><option value="male">Nam</option><option value="female">Nữ</option></select></label>
+          <label>Độ tuổi <select id="cAge"><option value="child">Trẻ em</option><option value="teen">Thiếu niên</option><option value="adult" selected>Trưởng thành</option><option value="middle">Trung niên</option><option value="old">Cao tuổi</option></select></label>
+        </div>
+        <label>Ảnh sheet <input id="cFile" type="file" accept="image/*"></label>
+        <button id="cAdd" class="primary big">Tải lên &amp; tách nhân vật</button>
+        <div id="cMsg" class="hint"></div>
+        <hr>
+        <h2>Thư viện</h2>
+        <div id="charGrid" class="grid"></div>
+      </aside>
+      <div class="panel grow" id="charEditor"><p class="muted">Chọn một nhân vật để chỉnh và xem thử chuyển động.</p></div>
+    </div>
+  </section>
+
+  <!-- ============ NỀN ============ -->
+  <section id="tab-bgs" class="tab">
+    <div class="panel">
+      <h2>Phông nền có sẵn (vẽ bằng code)</h2>
+      <div id="bgPresets" class="grid bgs"></div>
+      <h2 style="margin-top:24px">Ảnh nền của bạn</h2>
+      <p class="hint">Tải ảnh nền (gen bằng AI hoặc vẽ sẵn). AI viết truyện sẽ tự chọn theo tên. Mỗi cảnh trong kịch bản có thêm "prompt nền" tiếng Anh để bạn gen ảnh.</p>
+      <div class="row"><input id="bgName" placeholder="Tên nền, VD: Hành lang bệnh viện"><input id="bgFile" type="file" accept="image/*"><button id="bgAdd" class="primary">Tải lên</button></div>
+      <div id="bgUser" class="grid bgs"></div>
+    </div>
+  </section>
+
+  <!-- ============ XEM & XUẤT ============ -->
+  <section id="tab-export" class="tab">
+    <div class="cols">
+      <div class="panel grow center">
+        <div class="stage"><canvas id="stage" width="720" height="1280"></canvas></div>
+        <div class="ctrl">
+          <button id="playBtn" class="primary">▶ Phát</button>
+          <input id="seek" type="range" min="0" max="1000" value="0">
+          <span id="timeLbl" class="mono">0:00 / 0:00</span>
+        </div>
+      </div>
+      <aside class="panel narrow">
+        <h2>Xuất video</h2>
+        <div class="row2">
+          <label>Khung hình <select id="orient"><option value="v">Dọc 9:16 (720×1280)</option><option value="h">Ngang 16:9 (1280×720)</option></select></label>
+          <label>FPS <select id="fps"><option>24</option><option selected>30</option></select></label>
+        </div>
+        <label class="chk"><input id="subOn" type="checkbox" checked> Phụ đề</label>
+        <label class="chk"><input id="camAuto" type="checkbox" checked> Camera điện ảnh (tự đổi cỡ cảnh, rung nhẹ)</label>
+        <hr><h2>Phong cách &amp; âm thanh</h2>
+        <label>Phong cách <select id="pStyle"></select></label>
+        <div class="row2">
+          <label>Bộ lọc hình <select id="look"></select></label>
+          <label>Hiệu ứng <select id="sfxMode"></select></label>
+        </div>
+        <label>Nhạc nền <select id="music"></select></label>
+        <label>Âm lượng nhạc <input id="musicGain" type="range" min="0" max="100" value="55"></label>
+        <p class="hint">Hiệu ứng tự khớp hành động (bước chân, ngã, cửa…). Nhạc tự nhỏ lại khi có giọng đọc. Nhạc là CC BY: tool tự đưa dòng ghi nguồn khi xuất xong.</p>
+        <hr>
+        <label>Tiêu đề trên video <input id="titleOn" placeholder="(để trống nếu không cần)"></label>
+        <button id="ttsBtn" class="ghost big">① Tạo giọng đọc</button>
+        <div id="ttsProg" class="prog hidden"><div class="bar"><i></i></div><span></span></div>
+        <div id="ttsInfo" class="hint"></div>
+        <button id="expBtn" class="primary big">② Xuất MP4</button>
+        <div id="expProg" class="prog hidden"><div class="bar"><i></i></div><span></span></div>
+        <div id="expOut"></div>
+        <p class="hint">Xuất chạy ngay trên trình duyệt: giữ tab này mở cho tới khi xong. Video 10 phút ≈ vài phút xử lý.</p>
+        <hr><h2>Cảnh</h2><div id="sceneList" class="scenelist"></div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ============ CÀI ĐẶT ============ -->
+  <section id="tab-settings" class="tab">
+    <div class="panel" style="max-width:640px">
+      <h2>AI viết truyện</h2>
+      <label>Nhà cung cấp mặc định <select id="sProvider"><option value="demo">Demo</option><option value="gemini">Gemini</option><option value="deepseek">DeepSeek</option></select></label>
+      <div class="row2"><label>Gemini API key <input id="sGemKey" type="password" placeholder="AIza..."></label><label>Model Gemini <input id="sGemModel"></label></div>
+      <div class="row2"><label>DeepSeek API key <input id="sDsKey" type="password" placeholder="sk-..."></label><label>Model DeepSeek <input id="sDsModel"></label></div>
+      <h2 style="margin-top:20px">Giọng người dẫn</h2>
+      <div class="row2"><label>Giọng <select id="sNarr"><option value="male">Nam (NamMinh)</option><option value="female">Nữ (HoaiMy)</option></select></label>
+      <label>Hoặc mã giọng edge-tts <input id="sNarrVoice" placeholder="vi-VN-NamMinhNeural"></label></div>
+      <button id="sSave" class="primary big">Lưu cài đặt</button><span id="sMsg" class="hint"></span>
+      <p class="hint">Khóa API chỉ lưu trong thư mục data/ của máy bạn, không gửi đi đâu ngoài nhà cung cấp AI.</p>
+    </div>
+  </section>
+</main>
+<div id="toast"></div>
+<script src="/static/sets.js"></script>
+<script src="/static/engine.js"></script>
+<script src="/static/app.js"></script>
+</body>
+</html>
